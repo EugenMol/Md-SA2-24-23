@@ -34,12 +34,6 @@ def clone(args):
             print(result.stdout)
             print(result.returncode)
 
-            result = subprocess.run(['cd', '/home/eugen/git-test/111/Md-SA2-24-23'], encoding='utf-8', stdout=subprocess.PIPE)
-            print(result.stdout)
-            print(result.returncode)
-
-
-
 def create_branch(args):
     if check_git_status(args.dest) != 0:
         print(f'Указанная директория не содерижит репозиторий. Не могу создать новую ветку.')
@@ -74,29 +68,26 @@ subparsers = parser.add_subparsers(title='subcommands',
                                    help='description')
 
 # -----------Команда клонирования репозитария в указанную директорию------
-clone_parser = subparsers.add_parser('clone', help='create new db')
-clone_parser.add_argument(metavar='db-filename', dest='src',
-                          default='DFLT_DB_NAME', help='source')
-clone_parser.add_argument('--destination', '-d', dest='dest', #default=DIR_PATH,
-                          help='destination', )
+clone_parser = subparsers.add_parser('clone', help='Клонирование репозитория.')
+clone_parser.add_argument(dest='src', help='Необходимо указать репозиторий.')
+clone_parser.add_argument('--destination', '-d', dest='dest', help='Можно указать путь куда клонировать репозиторий', )
 clone_parser.set_defaults(func=clone)
 
 # -----------Создание новой ветки и переключение на неё-------------------
-create_branch_parser = subparsers.add_parser('create_branch', help='Create new branch & go into. Enter name of branch')
+create_branch_parser = subparsers.add_parser('create_branch', help='Создание и переход в новую веткую.')
 create_branch_parser.add_argument(metavar='branch_name', dest='branch',
-                                  help='branch')
-create_branch_parser.add_argument('--destination', '-d', dest='dest', default=DIR_PATH,
-                                  help='destination', )
+                                  help='Необходимо указать имя новой ветки.')
+create_branch_parser.add_argument('--destination', '-d', dest='dest', help='destination', )
 create_branch_parser.set_defaults(func=create_branch)
 
 # -----------Добавление файлов в индекс и создание коммита-----------------
-create_commit_parser = subparsers.add_parser('create_commit', help='Create new branch & go into. Enter name of branch')
+create_commit_parser = subparsers.add_parser('create_commit', help='Добавление файлов в индекс и создание коммита.')
 create_commit_parser.add_argument('--message', '-m', dest='msg', default='new_commit',
-                                  help='Enter message.', )
+                                  help='Указать комментарий к коммиту.')
 create_commit_parser.set_defaults(func=create_commit)
 
 # -----------Отправка ветки на удаленный репозиторий-----------------------
-make_push_parser = subparsers.add_parser('make_push', help='Create new branch & go into. Enter name of branch')
+make_push_parser = subparsers.add_parser('make_push', help='Отправка ветки на удаленный репозиторий')
 make_push_parser.set_defaults(func=make_push)
 
 if __name__ == '__main__':
