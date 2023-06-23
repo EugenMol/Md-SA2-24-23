@@ -8,13 +8,12 @@ jobs:
   GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: echo $(date) >> OUT
-      - run: echo "Changed repo by ${{github.actor}}" >> OUT
-     
       - name: Check out repository code
         uses: actions/checkout@v3
-      - name: List files in the repository
-        run: echo "List file in Repo $(ls ${{ github.workspace }})"  >> OUT
+      - run: echo "$(date)" >> OUT
+      - run: echo "Changed repo by ${{github.actor}}" >> OUT
+#       - name: List files in the repository
+      - run: echo "List file in Repo $(ls ${{ github.workspace }})"  >> OUT
       - run: echo "This job's status is ${{ job.status }}." >> OUT
       - name: Send message to Telegram_bot
         run: curl -s -X POST https://api.telegram.org/bot6243277711:AAH_wKjOAlUXvx5-7QFk8nwVaVnWFnffuEg/sendMessage -d chat_id=484531348 -d text="$(cat OUT)"
