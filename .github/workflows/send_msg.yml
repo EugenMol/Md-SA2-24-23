@@ -2,9 +2,15 @@ name: Send message to TG
 
 on: [push]
 jobs:
-  Explore-GitHub-Actions:
+  GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
       - run: echo $(date) >> OUT
-      - run: echo "${{github.actor}}" >> OUT
+      - run: echo "Changed repo by ${{github.actor}}" >> OUT
       - run: curl -s -X POST https://api.telegram.org/bot6243277711:AAH_wKjOAlUXvx5-7QFk8nwVaVnWFnffuEg/sendMessage -d chat_id=484531348 -d text="$(cat OUT)"
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - name: List files in the repository
+        run: |
+          ls ${{ github.workspace }}
+      - run: echo "This job's status is ${{ job.status }}."
