@@ -1,6 +1,9 @@
 name: Send message to TG
 
-on: [push]
+on: 
+  push:
+    paths:
+        - '**.js'
 jobs:
   GitHub-Actions:
     runs-on: ubuntu-latest
