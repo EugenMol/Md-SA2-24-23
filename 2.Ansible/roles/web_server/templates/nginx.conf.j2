@@ -1,0 +1,14 @@
+# the number of worker processes to use
+worker_processes 4;
+include /etc/nginx/conf.d/*.conf;
+
+http {
+  server {
+    listen {{ http_port }};
+    server_name {{ server_name }};
+    location / {
+      root {{ document_root }};
+      index index.html;
+    }
+  }
+}

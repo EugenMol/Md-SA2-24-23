@@ -1,0 +1,5 @@
+---
+# defaults file for web_server
+http_port:     80
+server_name:   mySite
+document_root: /var/www/html/
