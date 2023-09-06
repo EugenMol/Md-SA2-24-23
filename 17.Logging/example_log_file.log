@@ -1,0 +1,185 @@
+Sep 05 15:58:37 eugen MeterRunner[599]: 9/5/2023 3:58:37 PM [trace][MetersAutoRunner] Start task. Channel: ch1; Meter number: 401; Command: {"trf":3,"ago":0,"cnt":1,"vmid":401,"ph":15,"ki":1,"ku":1,"cmd":"incday"}.
+Sep 05 15:58:38 eugen MeterRunner[599]: 9/5/2023 3:58:38 PM [warning][MetersAutoRunner] Meter is not found. Meter number 402.
+Sep 05 15:58:38 eugen MeterRunner[599]: 9/5/2023 3:58:38 PM [trace][MetersAutoRunner] Start task. Channel: ch2; Meter number: -1; Command: {"trf":3,"ago":0,"cnt":1,"vmid":402,"ph":73,"ki":1,"ku":1,"cmd":"incday"}.
+Sep 05 15:58:38 eugen MeterRunner[599]: 9/5/2023 3:58:38 PM [warning][MetersAutoRunner] Meter is not found. Meter number 402.
+Sep 05 15:58:38 eugen MeterRunner[599]: 9/5/2023 3:58:38 PM [trace][MetersAutoRunner] Start task. Channel: ch2; Meter number: -1; Command: {"trf":3,"ago":0,"cnt":1,"vmid":402,"ph":73,"ki":1,"ku":1,"cmd":"day"}.
+Sep 05 15:58:38 eugen MeterRunner[599]: 9/5/2023 3:58:38 PM [warning][MetersAutoRunner] Meter is not found. Meter number 402.
+Sep 05 15:58:38 eugen MeterRunner[599]: 9/5/2023 3:58:38 PM [trace][MetersAutoRunner] Start task. Channel: ch2; Meter number: -1; Command: {"trf":3,"ago":0,"cnt":1,"vmid":402,"ph":73,"ki":1,"ku":1,"cmd":"min30prev"}.
+Sep 05 15:58:38 eugen MeterRunner[67841]:                    ch1 [vm401] :: Параметр KE = 250 получен из Redis
+Sep 05 15:58:38 eugen MeterRunner[67841]:                    ch1 [vm401] :: -------------------------------------
+Sep 05 15:58:38 eugen MeterRunner[67841]:                    ch1 [vm401] :: Приращение энергии за день 2023-09-05
+Sep 05 15:58:38 eugen MeterRunner[67841]:                    ch1 [vm401] :: -------------------------------------
+Sep 05 15:58:38 eugen MeterRunner[599]: 9/5/2023 3:58:38 PM [trace][MetersAutoRunner] Start task. Channel: ch2; Meter number: 403; Command: {"trf":3,"ago":0,"cnt":1,"vmid":403,"ph":75,"ki":1,"ku":1,"cmd":"incday"}.
+Sep 05 15:58:38 eugen MeterRunner[599]: 9/5/2023 3:58:38 PM [trace][MetersAutoRunner] Start task. Channel: ktp3; Meter number: 66; Command: {"trf":3,"ago":0,"cnt":1,"vmid":66,"ph":62,"ki":1,"ku":1,"cmd":"incday"}.
+Sep 05 15:58:39 eugen MeterRunner[67899]:                    ch2 [vm403] :: Параметр KE = 250 получен из Redis
+Sep 05 15:58:39 eugen MeterRunner[67899]:                    ch2 [vm403] :: -------------------------------------
+Sep 05 15:58:39 eugen MeterRunner[67899]:                    ch2 [vm403] :: Приращение энергии за день 2023-09-05
+Sep 05 15:58:39 eugen MeterRunner[67899]:                    ch2 [vm403] :: -------------------------------------
+Sep 05 15:58:39 eugen MeterRunner[599]: 9/5/2023 3:58:39 PM [trace][MetersAutoRunner] Start task. Channel: ktp4; Meter number: 58; Command: {"trf":3,"ago":0,"cnt":1,"vmid":58,"ph":72,"ki":1,"ku":1,"cmd":"incday"}.
+Sep 05 15:58:40 eugen MeterRunner[67905]:                    ktp3 [vm66] :: Параметр KE = 250 получен из Redis
+Sep 05 15:58:40 eugen MeterRunner[67905]:                    ktp3 [vm66] :: -------------------------------------
+Sep 05 15:58:40 eugen MeterRunner[67905]:                    ktp3 [vm66] :: Приращение энергии за день 2023-09-05
+Sep 05 15:58:40 eugen MeterRunner[67905]:                    ktp3 [vm66] :: -------------------------------------
+Sep 05 15:58:40 eugen MeterRunner[67943]:                    ktp4 [vm58] :: Параметр KE = 250 получен из Redis
+Sep 05 15:58:40 eugen MeterRunner[67943]:                    ktp4 [vm58] :: -------------------------------------
+Sep 05 15:58:40 eugen MeterRunner[67943]:                    ktp4 [vm58] :: Приращение энергии за день 2023-09-05
+Sep 05 15:58:40 eugen MeterRunner[67943]:                    ktp4 [vm58] :: -------------------------------------
+Sep 05 15:58:40 eugen MeterRunner[599]: 9/5/2023 3:58:40 PM [warning][MetersAutoRunner] Meter is not found. Meter number 23.
+Sep 05 15:58:40 eugen MeterRunner[599]: 9/5/2023 3:58:40 PM [trace][MetersAutoRunner] Start task. Channel: ktp5; Meter number: -1; Command: {"trf":3,"ago":0,"cnt":1,"vmid":23,"ph":54,"ki":1,"ku":1,"cmd":"incday"}.
+Sep 05 15:58:40 eugen MeterRunner[599]: 9/5/2023 3:58:40 PM [warning][MetersAutoRunner] Meter is not found. Meter number 23.
+Sep 05 15:58:40 eugen MeterRunner[599]: 9/5/2023 3:58:40 PM [trace][MetersAutoRunner] Start task. Channel: ktp5; Meter number: -1; Command: {"trf":3,"ago":0,"cnt":1,"vmid":23,"ph":54,"ki":1,"ku":1,"cmd":"day"}.
+Sep 05 15:58:40 eugen MeterRunner[599]: 9/5/2023 3:58:40 PM [warning][MetersAutoRunner] Meter is not found. Meter number 23.
+Sep 05 15:58:40 eugen MeterRunner[599]: 9/5/2023 3:58:40 PM [trace][MetersAutoRunner] Start task. Channel: ktp5; Meter number: -1; Command: {"trf":3,"ago":0,"cnt":1,"vmid":23,"ph":54,"ki":1,"ku":1,"cmd":"min30prev"}.
+Sep 05 15:58:41 eugen MeterRunner[599]: 9/5/2023 3:58:41 PM [warning][MetersAutoRunner] Meter is not found. Meter number 24.
+Sep 05 15:58:41 eugen MeterRunner[599]: 9/5/2023 3:58:41 PM [trace][MetersAutoRunner] Start task. Channel: ktp5; Meter number: -1; Command: {"trf":3,"ago":0,"cnt":1,"vmid":24,"ph":70,"ki":1,"ku":1,"cmd":"incday"}.
+Sep 05 15:58:41 eugen MeterRunner[599]: 9/5/2023 3:58:41 PM [warning][MetersAutoRunner] Meter is not found. Meter number 24.
+Sep 05 15:58:41 eugen MeterRunner[599]: 9/5/2023 3:58:41 PM [trace][MetersAutoRunner] Start task. Channel: ktp5; Meter number: -1; Command: {"trf":3,"ago":0,"cnt":1,"vmid":24,"ph":70,"ki":1,"ku":1,"cmd":"day"}.
+Sep 05 15:58:41 eugen MeterRunner[599]: 9/5/2023 3:58:41 PM [warning][MetersAutoRunner] Meter is not found. Meter number 24.
+Sep 05 15:58:41 eugen MeterRunner[599]: 9/5/2023 3:58:41 PM [trace][MetersAutoRunner] Start task. Channel: ktp5; Meter number: -1; Command: {"trf":3,"ago":0,"cnt":1,"vmid":24,"ph":70,"ki":1,"ku":1,"cmd":"min30prev"}.
+Sep 05 15:58:41 eugen MeterRunner[599]: 9/5/2023 3:58:41 PM [debug][MetersAutoRunner] Channel tasks is over. Channel: ktp5.
+Sep 05 15:59:16 eugen MeterRunner[67841]:                    ch1 [vm401] ::     Не удалось получить данные за 2023-09-05
+Sep 05 15:59:16 eugen MeterRunner[67841]:                    ch1 [vm401] :: ResultCode: 104
+Sep 05 15:59:16 eugen MeterRunner[599]: 9/5/2023 3:59:16 PM [error][MetersAutoRunner] Error meter run. Exit code: 104; Channel: ch1; Meter number: 401.
+Sep 05 15:59:16 eugen MeterRunner[599]: 9/5/2023 3:59:16 PM [trace][MetersAutoRunner] Start task. Channel: ch1; Meter number: 401; Command: {"trf":3,"ago":0,"cnt":1,"vmid":401,"ph":15,"ki":1,"ku":1,"cmd":"day"}.
+Sep 05 15:59:16 eugen MeterRunner[69000]:                    ch1 [vm401] :: Параметр KE = 250 получен из Redis
+Sep 05 15:59:16 eugen MeterRunner[69000]:                    ch1 [vm401] :: ----------------------------------------------
+Sep 05 15:59:16 eugen MeterRunner[69000]:                    ch1 [vm401] :: Накопленная энергия на начало суток 2023-09-05
+Sep 05 15:59:16 eugen MeterRunner[69000]:                    ch1 [vm401] :: ----------------------------------------------
+Sep 05 15:59:17 eugen MeterRunner[67899]:                    ch2 [vm403] ::     Не удалось получить данные за 2023-09-05
+Sep 05 15:59:17 eugen MeterRunner[67899]:                    ch2 [vm403] :: ResultCode: 104
+Sep 05 15:59:17 eugen MeterRunner[599]: 9/5/2023 3:59:17 PM [error][MetersAutoRunner] Error meter run. Exit code: 104; Channel: ch2; Meter number: 403.
+Sep 05 15:59:17 eugen MeterRunner[599]: 9/5/2023 3:59:17 PM [trace][MetersAutoRunner] Start task. Channel: ch2; Meter number: 403; Command: {"trf":3,"ago":0,"cnt":1,"vmid":403,"ph":75,"ki":1,"ku":1,"cmd":"day"}.
+Sep 05 15:59:17 eugen MeterRunner[69001]:                    ch2 [vm403] :: Параметр KE = 250 получен из Redis
+Sep 05 15:59:17 eugen MeterRunner[69001]:                    ch2 [vm403] :: ----------------------------------------------
+Sep 05 15:59:17 eugen MeterRunner[69001]:                    ch2 [vm403] :: Накопленная энергия на начало суток 2023-09-05
+Sep 05 15:59:17 eugen MeterRunner[69001]:                    ch2 [vm403] :: ----------------------------------------------
+Sep 05 15:59:18 eugen MeterRunner[67905]:                    ktp3 [vm66] ::     Не удалось получить данные за 2023-09-05
+Sep 05 15:59:18 eugen MeterRunner[67905]:                    ktp3 [vm66] :: ResultCode: 104
+Sep 05 15:59:18 eugen MeterRunner[599]: 9/5/2023 3:59:18 PM [error][MetersAutoRunner] Error meter run. Exit code: 104; Channel: ktp3; Meter number: 66.
+Sep 05 15:59:18 eugen MeterRunner[599]: 9/5/2023 3:59:18 PM [trace][MetersAutoRunner] Start task. Channel: ktp3; Meter number: 66; Command: {"trf":3,"ago":0,"cnt":1,"vmid":66,"ph":62,"ki":1,"ku":1,"cmd":"day"}.
+Sep 05 15:59:18 eugen MeterRunner[69002]:                    ktp3 [vm66] :: Параметр KE = 250 получен из Redis
+Sep 05 15:59:18 eugen MeterRunner[69002]:                    ktp3 [vm66] :: ----------------------------------------------
+Sep 05 15:59:18 eugen MeterRunner[69002]:                    ktp3 [vm66] :: Накопленная энергия на начало суток 2023-09-05
+Sep 05 15:59:18 eugen MeterRunner[69002]:                    ktp3 [vm66] :: ----------------------------------------------
+Sep 05 15:59:18 eugen MeterRunner[67943]:                    ktp4 [vm58] ::     Не удалось получить данные за 2023-09-05
+Sep 05 15:59:18 eugen MeterRunner[67943]:                    ktp4 [vm58] :: ResultCode: 104
+Sep 05 15:59:18 eugen MeterRunner[599]: 9/5/2023 3:59:18 PM [error][MetersAutoRunner] Error meter run. Exit code: 104; Channel: ktp4; Meter number: 58.
+Sep 05 15:59:18 eugen MeterRunner[599]: 9/5/2023 3:59:18 PM [trace][MetersAutoRunner] Start task. Channel: ktp4; Meter number: 58; Command: {"trf":3,"ago":0,"cnt":1,"vmid":58,"ph":72,"ki":1,"ku":1,"cmd":"day"}.
+Sep 05 15:59:18 eugen MeterRunner[69003]:                    ktp4 [vm58] :: Параметр KE = 250 получен из Redis
+Sep 05 15:59:18 eugen MeterRunner[69003]:                    ktp4 [vm58] :: ----------------------------------------------
+Sep 05 15:59:18 eugen MeterRunner[69003]:                    ktp4 [vm58] :: Накопленная энергия на начало суток 2023-09-05
+Sep 05 15:59:18 eugen MeterRunner[69003]:                    ktp4 [vm58] :: ----------------------------------------------
+Sep 05 15:59:54 eugen MeterRunner[69000]:                    ch1 [vm401] ::     Не удалось получить данные за 2023-09-05
+Sep 05 15:59:54 eugen MeterRunner[69000]:                    ch1 [vm401] :: ResultCode: 104
+Sep 05 15:59:54 eugen MeterRunner[599]: 9/5/2023 3:59:54 PM [error][MetersAutoRunner] Error meter run. Exit code: 104; Channel: ch1; Meter number: 401.
+Sep 05 15:59:54 eugen MeterRunner[599]: 9/5/2023 3:59:54 PM [trace][MetersAutoRunner] Start task. Channel: ch1; Meter number: 401; Command: {"trf":3,"ago":0,"cnt":1,"vmid":401,"ph":15,"ki":1,"ku":1,"cmd":"min30prev"}.
+Sep 05 15:59:54 eugen MeterRunner[69176]:                    ch1 [vm401] :: Параметр KE = 250 получен из Redis
+Sep 05 15:59:54 eugen MeterRunner[69176]:                    ch1 [vm401] :: -----------------
+Sep 05 15:59:54 eugen MeterRunner[69176]:                    ch1 [vm401] :: Предыдущая 30мин.
+Sep 05 15:59:54 eugen MeterRunner[69176]:                    ch1 [vm401] :: -----------------
+Sep 05 15:59:56 eugen MeterRunner[69001]:                    ch2 [vm403] ::     Не удалось получить данные за 2023-09-05
+Sep 05 15:59:56 eugen MeterRunner[69001]:                    ch2 [vm403] :: ResultCode: 104
+Sep 05 15:59:56 eugen MeterRunner[599]: 9/5/2023 3:59:56 PM [error][MetersAutoRunner] Error meter run. Exit code: 104; Channel: ch2; Meter number: 403.
+Sep 05 15:59:56 eugen MeterRunner[599]: 9/5/2023 3:59:56 PM [trace][MetersAutoRunner] Start task. Channel: ch2; Meter number: 403; Command: {"trf":3,"ago":0,"cnt":1,"vmid":403,"ph":75,"ki":1,"ku":1,"cmd":"min30prev"}.
+Sep 05 15:59:56 eugen MeterRunner[69189]:                    ch2 [vm403] :: Параметр KE = 250 получен из Redis
+Sep 05 15:59:56 eugen MeterRunner[69189]:                    ch2 [vm403] :: -----------------
+Sep 05 15:59:56 eugen MeterRunner[69189]:                    ch2 [vm403] :: Предыдущая 30мин.
+Sep 05 15:59:56 eugen MeterRunner[69189]:                    ch2 [vm403] :: -----------------
+Sep 05 15:59:56 eugen MeterRunner[69002]:                    ktp3 [vm66] ::     Не удалось получить данные за 2023-09-05
+Sep 05 15:59:56 eugen MeterRunner[69002]:                    ktp3 [vm66] :: ResultCode: 104
+Sep 05 15:59:56 eugen MeterRunner[599]: 9/5/2023 3:59:56 PM [error][MetersAutoRunner] Error meter run. Exit code: 104; Channel: ktp3; Meter number: 66.
+Sep 05 15:59:56 eugen MeterRunner[599]: 9/5/2023 3:59:56 PM [trace][MetersAutoRunner] Start task. Channel: ktp3; Meter number: 66; Command: {"trf":3,"ago":0,"cnt":1,"vmid":66,"ph":62,"ki":1,"ku":1,"cmd":"min30prev"}.
+Sep 05 15:59:56 eugen MeterRunner[69192]:                    ktp3 [vm66] :: Параметр KE = 250 получен из Redis
+Sep 05 15:59:56 eugen MeterRunner[69192]:                    ktp3 [vm66] :: -----------------
+Sep 05 15:59:56 eugen MeterRunner[69192]:                    ktp3 [vm66] :: Предыдущая 30мин.
+Sep 05 15:59:56 eugen MeterRunner[69192]:                    ktp3 [vm66] :: -----------------
+Sep 05 15:59:56 eugen MeterRunner[69003]:                    ktp4 [vm58] ::     Не удалось получить данные за 2023-09-05
+Sep 05 15:59:56 eugen MeterRunner[69003]:                    ktp4 [vm58] :: ResultCode: 104
+Sep 05 15:59:56 eugen MeterRunner[599]: 9/5/2023 3:59:56 PM [error][MetersAutoRunner] Error meter run. Exit code: 104; Channel: ktp4; Meter number: 58.
+Sep 05 15:59:56 eugen MeterRunner[599]: 9/5/2023 3:59:56 PM [trace][MetersAutoRunner] Start task. Channel: ktp4; Meter number: 58; Command: {"trf":3,"ago":0,"cnt":1,"vmid":58,"ph":72,"ki":1,"ku":1,"cmd":"min30prev"}.
+Sep 05 15:59:56 eugen MeterRunner[69197]:                    ktp4 [vm58] :: Параметр KE = 250 получен из Redis
+Sep 05 15:59:56 eugen MeterRunner[69197]:                    ktp4 [vm58] :: -----------------
+Sep 05 15:59:56 eugen MeterRunner[69197]:                    ktp4 [vm58] :: Предыдущая 30мин.
+Sep 05 15:59:56 eugen MeterRunner[69197]:                    ktp4 [vm58] :: -----------------
+Sep 05 16:00:32 eugen MeterRunner[69176]:                    ch1 [vm401] :: ResultCode: 104
+Sep 05 16:00:32 eugen MeterRunner[599]: 9/5/2023 4:00:32 PM [error][MetersAutoRunner] Error meter run. Exit code: 104; Channel: ch1; Meter number: 401.
+Sep 05 16:00:32 eugen MeterRunner[599]: 9/5/2023 4:00:32 PM [debug][MetersAutoRunner] Channel tasks is over. Channel: ch1.
+Sep 05 16:00:34 eugen MeterRunner[69189]:                    ch2 [vm403] :: ResultCode: 104
+Sep 05 16:00:34 eugen MeterRunner[599]: 9/5/2023 4:00:34 PM [error][MetersAutoRunner] Error meter run. Exit code: 104; Channel: ch2; Meter number: 403.
+Sep 05 16:00:34 eugen MeterRunner[599]: 9/5/2023 4:00:34 PM [debug][MetersAutoRunner] Channel tasks is over. Channel: ch2.
+Sep 05 16:00:34 eugen MeterRunner[69192]:                    ktp3 [vm66] :: ResultCode: 104
+Sep 05 16:00:34 eugen MeterRunner[599]: 9/5/2023 4:00:34 PM [error][MetersAutoRunner] Error meter run. Exit code: 104; Channel: ktp3; Meter number: 66.
+Sep 05 16:00:34 eugen MeterRunner[599]: 9/5/2023 4:00:34 PM [trace][MetersAutoRunner] Start task. Channel: ktp3; Meter number: 68; Command: {"trf":3,"ago":0,"cnt":1,"vmid":68,"ph":76,"ki":1,"ku":1,"cmd":"incday"}.
+Sep 05 16:00:34 eugen MeterRunner[69387]:                    ktp3 [vm68] :: Параметр KE = 250 получен из Redis
+Sep 05 16:00:34 eugen MeterRunner[69387]:                    ktp3 [vm68] :: -------------------------------------
+Sep 05 16:00:34 eugen MeterRunner[69387]:                    ktp3 [vm68] :: Приращение энергии за день 2023-09-05
+Sep 05 16:00:34 eugen MeterRunner[69387]:                    ktp3 [vm68] :: -------------------------------------
+Sep 05 16:00:34 eugen MeterRunner[69197]:                    ktp4 [vm58] :: ResultCode: 104
+Sep 05 16:00:34 eugen MeterRunner[599]: 9/5/2023 4:00:34 PM [error][MetersAutoRunner] Error meter run. Exit code: 104; Channel: ktp4; Meter number: 58.
+Sep 05 16:00:34 eugen MeterRunner[599]: 9/5/2023 4:00:34 PM [trace][MetersAutoRunner] Start task. Channel: ktp4; Meter number: 62; Command: {"trf":3,"ago":0,"cnt":1,"vmid":62,"ph":69,"ki":1,"ku":1,"cmd":"incday"}.
+Sep 05 16:00:35 eugen MeterRunner[69388]:                    ktp4 [vm62] :: Параметр KE = 250 получен из Redis
+Sep 05 16:00:35 eugen MeterRunner[69388]:                    ktp4 [vm62] :: -------------------------------------
+Sep 05 16:00:35 eugen MeterRunner[69388]:                    ktp4 [vm62] :: Приращение энергии за день 2023-09-05
+Sep 05 16:00:35 eugen MeterRunner[69388]:                    ktp4 [vm62] :: -------------------------------------
+Sep 05 16:01:12 eugen MeterRunner[69387]:                    ktp3 [vm68] ::     Не удалось получить данные за 2023-09-05
+Sep 05 16:01:12 eugen MeterRunner[69387]:                    ktp3 [vm68] :: ResultCode: 104
+Sep 05 16:01:12 eugen MeterRunner[599]: 9/5/2023 4:01:12 PM [error][MetersAutoRunner] Error meter run. Exit code: 104; Channel: ktp3; Meter number: 68.
+Sep 05 16:01:12 eugen MeterRunner[599]: 9/5/2023 4:01:12 PM [trace][MetersAutoRunner] Start task. Channel: ktp3; Meter number: 68; Command: {"trf":3,"ago":0,"cnt":1,"vmid":68,"ph":76,"ki":1,"ku":1,"cmd":"day"}.
+Sep 05 16:01:12 eugen MeterRunner[69435]:                    ktp3 [vm68] :: Параметр KE = 250 получен из Redis
+Sep 05 16:01:12 eugen MeterRunner[69435]:                    ktp3 [vm68] :: ----------------------------------------------
+Sep 05 16:01:12 eugen MeterRunner[69435]:                    ktp3 [vm68] :: ----------------------------------------------
+Sep 05 16:01:12 eugen MeterRunner[69435]:                    ktp3 [vm68] :: Накопленная энергия на начало суток 2023-09-05
+Sep 05 16:01:12 eugen MeterRunner[69435]:                    ktp3 [vm68] :: ----------------------------------------------
+Sep 05 16:01:13 eugen MeterRunner[69388]:                    ktp4 [vm62] ::     Не удалось получить данные за 2023-09-05
+Sep 05 16:01:13 eugen MeterRunner[69388]:                    ktp4 [vm62] :: ResultCode: 104
+Sep 05 16:01:13 eugen MeterRunner[599]: 9/5/2023 4:01:13 PM [error][MetersAutoRunner] Error meter run. Exit code: 104; Channel: ktp4; Meter number: 62.
+Sep 05 16:01:13 eugen MeterRunner[599]: 9/5/2023 4:01:13 PM [trace][MetersAutoRunner] Start task. Channel: ktp4; Meter number: 62; Command: {"trf":3,"ago":0,"cnt":1,"vmid":62,"ph":69,"ki":1,"ku":1,"cmd":"day"}.
+Sep 05 16:01:13 eugen MeterRunner[69436]:                    ktp4 [vm62] :: Параметр KE = 250 получен из Redis
+Sep 05 16:01:13 eugen MeterRunner[69436]:                    ktp4 [vm62] :: ----------------------------------------------
+Sep 05 16:01:13 eugen MeterRunner[69436]:                    ktp4 [vm62] :: Накопленная энергия на начало суток 2023-09-05
+Sep 05 16:01:13 eugen MeterRunner[69436]:                    ktp4 [vm62] :: ----------------------------------------------
+Sep 05 16:01:50 eugen MeterRunner[69435]:                    ktp3 [vm68] ::     Не удалось получить данные за 2023-09-05
+Sep 05 16:01:50 eugen MeterRunner[69435]:                    ktp3 [vm68] :: ResultCode: 104
+Sep 05 16:01:50 eugen MeterRunner[599]: 9/5/2023 4:01:50 PM [error][MetersAutoRunner] Error meter run. Exit code: 104; Channel: ktp3; Meter number: 68.
+Sep 05 16:01:50 eugen MeterRunner[599]: 9/5/2023 4:01:50 PM [trace][MetersAutoRunner] Start task. Channel: ktp3; Meter number: 68; Command: {"trf":3,"ago":0,"cnt":1,"vmid":68,"ph":76,"ki":1,"ku":1,"cmd":"min30prev"}.
+Sep 05 16:01:50 eugen MeterRunner[71354]:                    ktp3 [vm68] :: Параметр KE = 250 получен из Redis
+Sep 05 16:01:50 eugen MeterRunner[71354]:                    ktp3 [vm68] :: -----------------
+Sep 05 16:01:50 eugen MeterRunner[71354]:                    ktp3 [vm68] :: Предыдущая 30мин.
+Sep 05 16:01:50 eugen MeterRunner[71354]:                    ktp3 [vm68] :: -----------------
+Sep 05 16:01:51 eugen MeterRunner[69436]:                    ktp4 [vm62] ::     Не удалось получить данные за 2023-09-05
+Sep 05 16:01:51 eugen MeterRunner[69436]:                    ktp4 [vm62] :: ResultCode: 104
+Sep 05 16:01:51 eugen MeterRunner[599]: 9/5/2023 4:01:51 PM [error][MetersAutoRunner] Error meter run. Exit code: 104; Channel: ktp4; Meter number: 62.
+Sep 05 16:01:51 eugen MeterRunner[599]: 9/5/2023 4:01:51 PM [trace][MetersAutoRunner] Start task. Channel: ktp4; Meter number: 62; Command: {"trf":3,"ago":0,"cnt":1,"vmid":62,"ph":69,"ki":1,"ku":1,"cmd":"min30prev"}.
+Sep 05 16:01:51 eugen MeterRunner[71398]:                    ktp4 [vm62] :: Параметр KE = 250 получен из Redis
+Sep 05 16:01:51 eugen MeterRunner[71398]:                    ktp4 [vm62] :: -----------------
+Sep 05 16:01:51 eugen MeterRunner[71398]:                    ktp4 [vm62] :: Предыдущая 30мин.
+Sep 05 16:01:51 eugen MeterRunner[71398]:                    ktp4 [vm62] :: -----------------
+Sep 05 16:02:29 eugen MeterRunner[71354]:                    ktp3 [vm68] :: ResultCode: 104
+Sep 05 16:02:29 eugen MeterRunner[599]: 9/5/2023 4:02:29 PM [error][MetersAutoRunner] Error meter run. Exit code: 104; Channel: ktp3; Meter number: 68.
+Sep 05 16:02:29 eugen MeterRunner[599]: 9/5/2023 4:02:29 PM [debug][MetersAutoRunner] Channel tasks is over. Channel: ktp3.
+Sep 05 16:02:29 eugen MeterRunner[71398]:                    ktp4 [vm62] :: ResultCode: 104
+Sep 05 16:02:29 eugen MeterRunner[599]: 9/5/2023 4:02:29 PM [error][MetersAutoRunner] Error meter run. Exit code: 104; Channel: ktp4; Meter number: 62.
+Sep 05 16:02:29 eugen MeterRunner[599]: 9/5/2023 4:02:29 PM [trace][MetersAutoRunner] Start task. Channel: ktp4; Meter number: 63; Command: {"trf":3,"ago":0,"cnt":1,"vmid":63,"ph":78,"ki":1,"ku":1,"cmd":"incday"}.
+Sep 05 16:02:29 eugen MeterRunner[75041]:                    ktp4 [vm63] :: Параметр KE = 250 получен из Redis
+Sep 05 16:02:29 eugen MeterRunner[75041]:                    ktp4 [vm63] :: -------------------------------------
+Sep 05 16:02:29 eugen MeterRunner[75041]:                    ktp4 [vm63] :: Приращение энергии за день 2023-09-05
+Sep 05 16:02:29 eugen MeterRunner[75041]:                    ktp4 [vm63] :: -------------------------------------
+Sep 05 16:03:07 eugen MeterRunner[75041]:                    ktp4 [vm63] ::     Не удалось получить данные за 2023-09-05
+Sep 05 16:03:07 eugen MeterRunner[75041]:                    ktp4 [vm63] :: ResultCode: 104
+Sep 05 16:03:07 eugen MeterRunner[599]: 9/5/2023 4:03:07 PM [error][MetersAutoRunner] Error meter run. Exit code: 104; Channel: ktp4; Meter number: 63.
+Sep 05 16:03:07 eugen MeterRunner[599]: 9/5/2023 4:03:07 PM [trace][MetersAutoRunner] Start task. Channel: ktp4; Meter number: 63; Command: {"trf":3,"ago":0,"cnt":1,"vmid":63,"ph":78,"ki":1,"ku":1,"cmd":"day"}.
+Sep 05 16:03:07 eugen MeterRunner[79946]:                    ktp4 [vm63] :: Параметр KE = 250 получен из Redis
+Sep 05 16:03:07 eugen MeterRunner[79946]:                    ktp4 [vm63] :: ----------------------------------------------
+Sep 05 16:03:07 eugen MeterRunner[79946]:                    ktp4 [vm63] :: Накопленная энергия на начало суток 2023-09-05
+Sep 05 16:03:07 eugen MeterRunner[79946]:                    ktp4 [vm63] :: ----------------------------------------------
+Sep 05 16:03:45 eugen MeterRunner[79946]:                    ktp4 [vm63] ::     Не удалось получить данные за 2023-09-05
+Sep 05 16:03:45 eugen MeterRunner[79946]:                    ktp4 [vm63] :: ResultCode: 104
+Sep 05 16:03:45 eugen MeterRunner[599]: 9/5/2023 4:03:45 PM [error][MetersAutoRunner] Error meter run. Exit code: 104; Channel: ktp4; Meter number: 63.
+Sep 05 16:03:45 eugen MeterRunner[599]: 9/5/2023 4:03:45 PM [trace][MetersAutoRunner] Start task. Channel: ktp4; Meter number: 63; Command: {"trf":3,"ago":0,"cnt":1,"vmid":63,"ph":78,"ki":1,"ku":1,"cmd":"min30prev"}.
+Sep 05 16:03:45 eugen MeterRunner[80849]:                    ktp4 [vm63] :: Параметр KE = 250 получен из Redis
+Sep 05 16:03:46 eugen MeterRunner[80849]:                    ktp4 [vm63] :: -----------------
+Sep 05 16:03:46 eugen MeterRunner[80849]:                    ktp4 [vm63] :: Предыдущая 30мин.
+Sep 05 16:03:46 eugen MeterRunner[80849]:                    ktp4 [vm63] :: -----------------
+Sep 05 16:04:24 eugen MeterRunner[80849]:                    ktp4 [vm63] :: ResultCode: 104
+Sep 05 16:04:24 eugen MeterRunner[599]: 9/5/2023 4:04:24 PM [error][MetersAutoRunner] Error meter run. Exit code: 104; Channel: ktp4; Meter number: 63.
+Sep 05 16:04:24 eugen MeterRunner[599]: 9/5/2023 4:04:24 PM [debug][MetersAutoRunner] Channel tasks is over. Channel: ktp4.
