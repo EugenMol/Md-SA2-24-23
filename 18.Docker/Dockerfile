@@ -1,5 +1,5 @@
 FROM debian:bullseye-slim
-MAINTENER eugenmol86@gmail.com
+MAINTAINER eugenmol86@gmail.com
 
 ARG INSTALL_FILE=actions-runner-linux-x64-2.309.0.tar.gz
 ARG TOKEN=AKMX4A3GZWLVG6KPRTLZAVDFBBSOA
