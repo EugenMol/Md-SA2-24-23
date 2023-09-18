@@ -1,4 +1,5 @@
 FROM debian:bullseye-slim
+MAINTENER eugenmol86@gmail.com
 
 ARG INSTALL_FILE=actions-runner-linux-x64-2.309.0.tar.gz
 ARG TOKEN=AKMX4A3GZWLVG6KPRTLZAVDFBBSOA
@@ -14,8 +15,8 @@ RUN apt-get update && apt-get install -y curl wget \
     && apt-get install -y aspnetcore-runtime-7.0 dotnet-sdk-7.0 \
     && curl -o $INSTALL_FILE -L https://github.com/actions/runner/releases/download/v2.309.0/$INSTALL_FILE \
     && tar xzf ./actions-runner-linux-x64-2.309.0.tar.gz  \
-    && rm $INSTALL_FILE
-RUN /n | ./config.sh --url https://github.com/EugenMol/test_self_hosted_GHA --token $TOKEN
+    && rm $INSTALL_FILE \
+    && /n | ./config.sh --url https://github.com/EugenMol/test_self_hosted_GHA --token $TOKEN
 
 ENTRYPOINT ["/bin/bash"]
 
