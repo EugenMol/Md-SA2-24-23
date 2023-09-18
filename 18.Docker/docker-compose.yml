@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  frontend:
+    image: eugenmol86/balloons_app_frontend:0.2.3
+    restart: always
+    environment:
+      VUE_APP_TITLE: NZGA-2
+      VUE_APP_URL: 'http://192.168.1.81:9000'
+    ports:
+      - '8080:80'
