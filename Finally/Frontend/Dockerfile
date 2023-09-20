@@ -1,9 +1,12 @@
-# этап сборки (build stage)
-FROM node:lts-alpine as build-stage
+# этап устновки (install stage)
+FROM node:lts-alpine as installer
 WORKDIR /app
 COPY package*.json ./
 RUN npm install
 COPY . .
+
+# этап сборки (build stage)
+FROM installer as build
 RUN npm run build
 
 # этап production (production-stage)
