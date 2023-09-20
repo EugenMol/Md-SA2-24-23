@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>kns</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .content {
+            padding: 20px;
+        }
+        .large-button {
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+#channelTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#channelTable th, #channelTable td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+#channelTable th {
+    background-color: #f2f2f2;
+}
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="/">Каналы связи</a>
+        <a href="/meters">Приборы учета</a>
+        <a href="/groups">Группы опроса</a>
+    </div>
+
+    <div class="content">
+        <h1>Каналы</h1>
+        <input type="file" id="fileInput" style="display: none;">
+        <button class="large-button" onclick="downloadExcel()">Создать канал</button>
+        <button class="large-button" onclick="chooseFile()">Выбрать файл для загрузки</button>
+        <button class="large-button" onclick="uploadFile()">Загрузить файл</button>
+        <button class="large-button" onclick="displayChannelData()">Обновить таблицу</button>
+        <p>Выбранный файл: <span id="selectedFileName">None</span></p>
+             <table id="channelTable" border="1">
+    <tr>
+        <th>Название канала</th>
+        <th>Тип</th>
+         <th>IP-адрес</th>
+            <th>Порт</th>
+            <th>Serial_port</th>
+            <th>Baud_rate</th>
+            <th>Stop_bits</th>
+          <th>Data_bits</th>
+          <th>Активен</th>
+    </tr>
+</table>
+    </div>
+
+</body>
+<script>
+function displayChannelData() {
+    fetch('/get_channels')
+        .then(response => response.json())
+        .then(channels => {
+            const table = document.querySelector('#channelTable');
+
+            while (table.rows.length > 1) {
+                table.deleteRow(1);
+            }
+
+            channels.forEach(channel => {
+                const newRow = table.insertRow();
+                const cell1 = newRow.insertCell(0);
+                const cell2 = newRow.insertCell(1);
+                const cell3 = newRow.insertCell(2);
+                const cell4 = newRow.insertCell(3);
+                const cell5 = newRow.insertCell(4);
+                const cell6 = newRow.insertCell(5);
+                const cell7 = newRow.insertCell(6);
+                const cell8 = newRow.insertCell(7);
+                const cell9 = newRow.insertCell(8);
+
+                cell1.textContent = channel.name;
+                cell2.textContent = channel.type;
+
+                if (channel.type === "TCP") {
+                    cell3.textContent = channel.ip;
+                    cell4.textContent = channel.port;
+                    cell9.textContent = channel.active;
+                } else if (channel.type === "COM") {
+                    cell5.textContent = channel.serial_port;
+                    cell6.textContent = channel.baud_rate;
+                    cell7.textContent = channel.stop_bits;
+                    cell8.textContent = channel.data_bits;
+                    cell9.textContent = channel.active;
+                }
+            });
+        })
+        .catch(error => {
+            console.error('Error displaying channel data:', error);
+        });
+}
+
+     function downloadExcel() {
+        window.location.href = '/download_channel?filename=Channel_data.xlsx';
+    }
+    let selectedFile = null;
+
+   function chooseFile() {
+    const fileInput = document.getElementById('fileInput');
+    fileInput.click();
+
+    fileInput.addEventListener('change', function(event) {
+        selectedFile = event.target.files[0];
+        const selectedFileName = document.getElementById('selectedFileName');
+        selectedFileName.textContent = selectedFile ? selectedFile.name : 'None';
+    });
+}
+
+ function uploadFile() {
+    if (selectedFile) {
+        const formData = new FormData();
+        formData.append('file', selectedFile);
+
+        fetch('/upload_channel', {
+            method: 'POST',
+            body: formData,
+        })
+        .then(response => {
+            if (response.ok) {
+                alert('File uploaded successfully');
+                importData()
+            } else {
+                alert('File upload failed');
+            }
+        })
+        .catch(error => {
+            console.error('Error uploading file:', error);
+        });
+    } else {
+        alert('No file selected');
+    }
+}
+
+function importData() {
+    const importResponsePromise = fetch('/import_channel', {
+        method: 'POST',
+    });
+
+    importResponsePromise
+        .then(function(importResponse) {
+            if (importResponse.ok) {
+                alert('Data imported successfully');
+            } else {
+                alert('Data import failed');
+            }
+        })
+        .catch(function(error) {
+            console.error('Error importing data:', error);
+        });
+}
+
+function saveTableDataToLocalStorage() {
+    const tableData = [];
+    const table = document.querySelector('#channelTable');
+
+    for (let i = 1; i < table.rows.length; i++) {
+        const row = table.rows[i];
+        const rowData = {
+            name: row.cells[0].textContent,
+            type: row.cells[1].textContent,
+            ip: row.cells[2].textContent,
+            port: row.cells[3].textContent,
+            serial_port: row.cells[4].textContent,
+            baud_rate: row.cells[5].textContent,
+            stop_bits: row.cells[6].textContent,
+            data_bits: row.cells[7].textContent,
+            active: row.cells[8].textContent,
+        };
+        tableData.push(rowData);
+    }
+
+    localStorage.setItem('channelTableData', JSON.stringify(tableData));
+}
+
+function restoreTableDataFromLocalStorage() {
+    const storedData = localStorage.getItem('channelTableData');
+    if (storedData) {
+        const tableData = JSON.parse(storedData);
+        const table = document.querySelector('#channelTable');
+
+        tableData.forEach(data => {
+            const newRow = table.insertRow();
+            const cell1 = newRow.insertCell(0);
+            const cell2 = newRow.insertCell(1);
+            const cell3 = newRow.insertCell(2);
+            const cell4 = newRow.insertCell(3);
+            const cell5 = newRow.insertCell(4);
+            const cell6 = newRow.insertCell(5);
+            const cell7 = newRow.insertCell(6);
+            const cell8 = newRow.insertCell(7);
+            const cell9 = newRow.insertCell(8);
+
+            cell1.textContent = data.name;
+            cell2.textContent = data.type;
+            cell3.textContent = data.ip || '';
+            cell4.textContent = data.port || '';
+            cell5.textContent = data.serial_port || '';
+            cell6.textContent = data.baud_rate || '';
+            cell7.textContent = data.stop_bits || '';
+            cell8.textContent = data.data_bits || '';
+            cell9.textContent = data.active;
+        });
+    }
+}
+
+window.addEventListener('beforeunload', saveTableDataToLocalStorage);
+window.addEventListener('load', restoreTableDataFromLocalStorage);
+</script>
+</html>

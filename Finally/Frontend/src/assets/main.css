@@ -1,0 +1,16 @@
+
+
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-style: normal;
+  font-display: auto;
+  unicode-range: U+000-5FF;
+  src: local("Montserrat"), url("./fonts/Montserrat/Montserrat-Medium.woff") format("woff");
+}
+
+.v-application {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+}
